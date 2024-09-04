@@ -134,55 +134,55 @@
 """Masala"""
 
 
-class Person:
-    def __init__(self, name, age):
-        self.__name = name
-        self._age  = age
-
-    def get_name(self):
-        return self.__name
-
-    def set_name(self, name):
-        self.__name = name
-
-    def get_age(self):
-        return self._age
-
-    def set_age(self):
-        if age > 0:
-            self._age = age
-        else:
-            print("xato kiritilgan")
-
-    def yoshni_oshirish(self):
-        self._age += 1
-
-    def malumotlarni_chop_et(self):
-        print(f"Ismi: {self.__name}, Yoshi: {self._age}")
-
-
-class Student(Person):
-    def __init__(self, name, age, student_id, gpa):
-        super().__init__(name, age)
-        self.__id = student_id
-        self._gpa = gpa
-
-    def get_id(self):
-        return self.__id
-
-    def get_gpa(self):
-        return self._gpa
-
-    def set_gpa(self, gpa):
-         self._gpa = gpa
-
-    def gpa_oshirish(self, value):
-        self._gpa += value
-
-    def malumotlarni_chiqar(self):
-        super().malumotlarni_chiqar()
-        print(f"ID: {self.__id}, GPA: {self._gpa}")
-
-
-person = Person("Ziyovuddin", 14)
-person.malumotlarni_chop_et()
+# class Person:
+#     def __init__(self, name, age):
+#         self.__name = name
+#         self._age  = age
+#
+#     def get_name(self):
+#         return self.__name
+#
+#     def set_name(self, name):
+#         self.__name = name
+#
+#     def get_age(self):
+#         return self._age
+#
+#     def set_age(self):
+#         if age > 0:
+#             self._age = age
+#         else:
+#             print("xato kiritilgan")
+#
+#     def yoshni_oshirish(self):
+#         self._age += 1
+#
+#     def malumotlarni_chop_et(self):
+#         print(f"Ismi: {self.__name}, Yoshi: {self._age}")
+#
+#
+# class Student(Person):
+#     def __init__(self, name, age, student_id, gpa):
+#         super().__init__(name, age)
+#         self.__id = student_id
+#         self._gpa = gpa
+#
+#     def get_id(self):
+#         return self.__id
+#
+#     def get_gpa(self):
+#         return self._gpa
+#
+#     def set_gpa(self, gpa):
+#          self._gpa = gpa
+#
+#     def gpa_oshirish(self, value):
+#         self._gpa += value
+#
+#     def malumotlarni_chiqar(self):
+#         super().malumotlarni_chiqar()
+#         print(f"ID: {self.__id}, GPA: {self._gpa}")
+#
+#
+# person = Person("Ziyovuddin", 14)
+# person.malumotlarni_chop_et()
